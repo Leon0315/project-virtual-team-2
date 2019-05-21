@@ -13,7 +13,7 @@ export class TextEditorComponent {
   // Stores the last key pressed by the user.
   currentKey: string;
 
-  // True when the last change was cut or paste. 
+  // True when the last change was cut or paste.
   cutPastePressed = false;
 
   // True when the line text area is being populated.
@@ -22,7 +22,7 @@ export class TextEditorComponent {
   // Amount of spaces to be added on 'Tab' press.
   numberOfSpacesToIndent = 4;
 
-  // Stores number of files that have been opened in this session. 
+  // Stores number of files that have been opened in this session.
   latestFileId = 0;
 
   // Stores the id of the currently open file tab.
@@ -35,6 +35,7 @@ export class TextEditorComponent {
   openFile(): void {
     // Get the upload input element and then click it.
     let fileOpenInput = document.getElementById("file-upload");
+    console.log('hellochanges');
     if (fileOpenInput != null) {
       fileOpenInput.click();
     }
@@ -77,7 +78,7 @@ export class TextEditorComponent {
     }
   }
 
-  /* 
+  /*
     This function is used to close the editor and return
     to the main screen.
   */
@@ -110,7 +111,7 @@ export class TextEditorComponent {
     this.filePaths = [""];
   }
 
-  /* 
+  /*
   This function is used to hide the editor and return
   to the main screen.
 */
@@ -150,7 +151,7 @@ export class TextEditorComponent {
     }
 
     /*
-      Show the clicked file tab, and add an "active" class to the 
+      Show the clicked file tab, and add an "active" class to the
       button that opened the tab
     */
     let fileIdElement = document.getElementById(fileId);
@@ -212,7 +213,7 @@ export class TextEditorComponent {
   }
 
   /*
-    Store the last key pressed. Required to decide when 
+    Store the last key pressed. Required to decide when
     to repopulate the line numbers.
   */
   keyPressed(event: KeyboardEvent): void {
@@ -249,7 +250,7 @@ export class TextEditorComponent {
 
   /*
     This function is called whenever there is a change in
-    the file text area. It repopulates the line numbers 
+    the file text area. It repopulates the line numbers
     depending on what action the user takes.
   */
   valueChanged(): void {
@@ -270,7 +271,7 @@ export class TextEditorComponent {
   }
 
   /*
-    Update the number of spaces to indent based 
+    Update the number of spaces to indent based
     on selection.
   */
   updateIndentAmount(): void {
@@ -279,7 +280,7 @@ export class TextEditorComponent {
   }
 
   /*
-    Get content of text area and file name and 
+    Get content of text area and file name and
     save the contents.
   */
   saveFile(): void {
