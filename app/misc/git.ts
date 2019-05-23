@@ -389,13 +389,13 @@ function pushToRemote() {
   let branch = document.getElementById("branch-name").innerText;
   Git.Repository.open(repoFullPath)
     .then(function (repo) {
-      console.log('commit history:', commitHistory)
-      commitMessage = document.getElementById('commit-message-input').value;
+      console.log('commit history here:', commitHistory)
+    //   commitMessage = document.getElementById('commit-message-input').value;
 
-      if (commitMessage == null || commitMessage == "") {
-        window.alert("Cannot push without a commit first. Please add commit before pushing");
-      return;
-    }
+    //   if (commitMessage == null || commitMessage == "") {
+    //     window.alert("Cannot push without a commit first. Please add commit before pushing");
+    //   return;
+    // asd}
       console.log("Pushing changes to remote")
       displayModal("Pushing changes to remote...");
       addCommand("git push -u origin " + branch);
