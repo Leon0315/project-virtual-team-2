@@ -112,3 +112,4 @@ VisualGit utilises a range of libraries and frameworks, more information on them
 asdsdfasfd
 asd
 testing issue #31, push wishout commit
+asd
