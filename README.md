@@ -108,7 +108,3 @@ VisualGit utilises a range of libraries and frameworks, more information on them
  - [nodegit](http://www.nodegit.org/)
  - [Vis.js](http://visjs.org/docs/network/)
  - [TypeScript](https://www.typescriptlang.org/)
-
-asdsdfasfd
-asd
-testing issue #31, push wishout commit
