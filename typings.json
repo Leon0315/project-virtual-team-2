@@ -5,6 +5,5 @@
     "node": "registry:dt/node#4.0.0+20160509154515",
     "node-git": "registry:dt/node-git#0.0.0+20160316155526",
     "require": "registry:dt/require#2.1.20+20160316155526"
-    //as asd
   }
 }
