@@ -389,6 +389,7 @@ function pushToRemote() {
   let branch = document.getElementById("branch-name").innerText;
   Git.Repository.open(repoFullPath)
     .then(function (repo) {
+      console.log('commit history:', commitHistory)
       commitMessage = document.getElementById('commit-message-input').value;
 
       if (commitMessage == null || commitMessage == "") {
